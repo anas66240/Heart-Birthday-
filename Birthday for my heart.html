@@ -1,0 +1,1635 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مساحة ريمة الهادئة 🌿🌸</title>
+    
+    <!-- External Fonts ( Cairo & Amiri ) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&family=Amiri:ital,wght@0,400;0,700;1,400&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Tailwind Config for Cairo and JetBrains font -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Cairo', 'sans-serif'],
+                        serif: ['Amiri', 'serif'],
+                        mono: ['JetBrains Mono', 'monospace'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Smooth Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #050b14;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #1e293b;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #38bdf8;
+        }
+
+        /* Ambient glows and background animations */
+        body {
+            background-color: #050b14;
+            color: #e2e8f0;
+            font-family: 'Cairo', sans-serif;
+            overflow-x: hidden;
+        }
+
+        /* Pulse aura for candle and glowing objects */
+        @keyframes pulse-glow {
+            0%, 100% { opacity: 0.2; transform: scale(1); }
+            50% { opacity: 0.4; transform: scale(1.15); }
+        }
+        .glow-pulse {
+            animation: pulse-glow 3s infinite ease-in-out;
+        }
+
+        /* Floater items animation */
+        @keyframes floating-up {
+            0% { transform: translateY(110vh) translateX(0) rotate(0deg); opacity: 0; }
+            10% { opacity: 0.8; }
+            90% { opacity: 0.8; }
+            100% { transform: translateY(-10vh) translateX(100px) rotate(360deg); opacity: 0; }
+        }
+        .floating-heart {
+            position: absolute;
+            bottom: -50px;
+            pointer-events: none;
+            z-index: 1;
+            animation: floating-up 10s linear infinite;
+        }
+
+        /* Custom realistic candle flame animation */
+        @keyframes flame-burn {
+            0%, 100% { transform: scaleX(1) scaleY(1) rotate(0deg); }
+            20% { transform: scaleX(0.9) scaleY(1.1) rotate(2deg); }
+            40% { transform: scaleX(1.1) scaleY(0.9) rotate(-2deg); }
+            60% { transform: scaleX(0.95) scaleY(1.05) rotate(1deg); }
+            80% { transform: scaleX(1.05) scaleY(0.95) rotate(-1deg); }
+        }
+        .candle-flame {
+            animation: flame-burn 1.2s infinite ease-in-out;
+            border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+        }
+
+        /* Input Slider Stylings for Music Player */
+        input[type="range"] {
+            -webkit-appearance: none;
+            appearance: none;
+            background: #1e293b;
+        }
+        input[type="range"]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: #38bdf8;
+            cursor: pointer;
+        }
+
+        /* Special premium shaking/glowing button */
+        @keyframes bday-button-shake {
+            0%, 100% { transform: scale(1) rotate(0deg); }
+            5%, 25% { transform: scale(1.06) rotate(-7deg); }
+            10%, 30% { transform: scale(1.06) rotate(7deg); }
+            15% { transform: scale(1.06) rotate(-7deg); }
+            20% { transform: scale(1.06) rotate(7deg); }
+            35% { transform: scale(1.06) rotate(-4deg); }
+            40% { transform: scale(1.06) rotate(4deg); }
+            45% { transform: scale(1.06) rotate(0deg); }
+            50% { transform: scale(1) rotate(0deg); }
+        }
+        @keyframes bday-button-glow {
+            0%, 100% { box-shadow: 0 0 15px rgba(236, 72, 153, 0.5), 0 0 0 0px rgba(236, 72, 153, 0.4); }
+            50% { box-shadow: 0 0 25px rgba(99, 102, 241, 0.7), 0 0 0 10px rgba(99, 102, 241, 0); }
+        }
+        @keyframes gift-icon-shake {
+            0%, 100% { transform: rotate(0deg); }
+            20%, 60% { transform: rotate(-15deg); }
+            40%, 80% { transform: rotate(15deg); }
+        }
+        .bday-shaking-btn {
+            animation: bday-button-shake 2.5s infinite ease-in-out, bday-button-glow 2.5s infinite ease-in-out !important;
+        }
+        .gift-icon-anim {
+            animation: gift-icon-shake 1.5s infinite ease-in-out;
+            display: inline-block;
+        }
+    </style>
+<script src="/_aistudio-iframe.js"></script></head>
+<body class="min-h-screen relative overflow-x-hidden select-none selection:bg-sky-500/30 selection:text-white">
+
+    <!-- Ambient background glows -->
+    <div class="absolute top-[-10%] left-1/2 -translate-x-1/2 w-full max-w-7xl h-[600px] bg-gradient-to-b from-sky-500/10 via-indigo-500/5 to-transparent rounded-full blur-3xl pointer-events-none z-0"></div>
+    <div class="absolute bottom-[-10%] left-1/2 -translate-x-1/2 w-full max-w-7xl h-[500px] bg-gradient-to-t from-sky-500/5 via-transparent to-transparent rounded-full blur-3xl pointer-events-none z-0"></div>
+
+    <!-- Floating hearts and stars container -->
+    <div id="floating-elements-bg" class="absolute inset-0 pointer-events-none overflow-hidden z-0"></div>
+
+    <!-- Heart Splash Effect Overlay (Triggered by button) -->
+    <div id="heart-splash" class="fixed inset-0 pointer-events-none z-50 flex items-center justify-center opacity-0 transition-opacity duration-500">
+        <div class="text-9xl drop-shadow-[0_0_30px_rgba(56,189,248,0.6)]">💖</div>
+    </div>
+
+    <!-- LOCK SCREEN GATE -->
+    <div id="lock-screen" class="fixed inset-0 bg-[#050b14] z-50 flex flex-col items-center justify-center p-4 transition-all duration-700">
+        <div class="absolute top-1/4 left-1/4 w-32 h-32 bg-sky-500/10 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-1/4 right-1/4 w-40 h-40 bg-indigo-500/10 rounded-full blur-3xl"></div>
+
+        <div class="w-full max-w-md bg-[#091528]/80 backdrop-blur-xl border border-sky-500/20 rounded-3xl p-8 shadow-2xl relative z-10 text-center">
+            <div class="w-16 h-16 bg-sky-950/50 border border-sky-500/30 rounded-full flex items-center justify-center mx-auto mb-6 shadow-inner relative">
+                <i data-lucide="lock" class="w-6 h-6 text-sky-400"></i>
+                <div class="absolute inset-0 border border-sky-400/20 rounded-full animate-ping pointer-events-none"></div>
+            </div>
+
+            <h2 class="text-2xl font-bold text-white mb-2">مساحتنا الخاصة 💙</h2>
+            <p class="text-slate-400 text-sm mb-6">الرجاء إدخال الرمز السري للدخول للذكرى والأنغام الدافئة</p>
+
+            <!-- Password Input -->
+            <div class="relative mb-4 max-w-xs mx-auto">
+                <input
+                    id="password-input"
+                    type="password"
+                    placeholder="الرمز السري"
+                    class="w-full bg-slate-950/60 border border-sky-500/25 rounded-xl px-4 py-3 text-center text-white tracking-widest font-mono text-lg placeholder:font-sans placeholder:tracking-normal focus:outline-none focus:border-sky-400 focus:ring-2 focus:ring-sky-500/20 transition-all"
+                    maxLength="10"
+                    onkeydown="if(event.key === 'Enter') handleUnlock()"
+                />
+                <button
+                    type="button"
+                    onclick="togglePasswordVisibility()"
+                    class="absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 hover:text-sky-300 transition-colors"
+                >
+                    <i id="password-eye" data-lucide="eye" class="w-5 h-5"></i>
+                </button>
+            </div>
+
+            <!-- Error message -->
+            <p id="error-message" class="text-red-400 text-xs font-semibold mb-4 hidden"></p>
+
+            <!-- Unlock Button -->
+            <button
+                onclick="handleUnlock()"
+                class="w-full max-w-xs mx-auto bg-gradient-to-r from-sky-500 to-indigo-600 hover:from-sky-400 hover:to-indigo-500 text-white font-bold py-3 px-6 rounded-xl shadow-lg shadow-sky-500/10 hover:shadow-sky-500/20 transform hover:-translate-y-0.5 active:translate-y-0 transition-all flex items-center justify-center gap-2"
+            >
+                <i data-lucide="unlock" class="w-5 h-5"></i>
+                <span>دخول هادئ</span>
+            </button>
+
+            <!-- Password Hint -->
+            <div class="mt-8 pt-4 border-t border-sky-500/10">
+                <p class="text-xs text-sky-400/60 flex items-center justify-center gap-1">
+                    <i data-lucide="sparkles" class="w-3.5 h-3.5 text-sky-400"></i>
+                    <span>تلميح للرمز السري: <strong class="font-mono text-sky-300">8314</strong></span>
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- MAIN APPLICATION WRAPPER -->
+    <div id="main-content" class="w-full max-w-7xl mx-auto px-4 py-8 relative z-10 flex flex-col lg:flex-row-reverse lg:gap-8 justify-center items-start hidden opacity-0 transition-opacity duration-1000">
+        
+        <!-- Floating Action Buttons -->
+        <div class="fixed top-4 left-4 z-40 flex gap-2">
+            <button
+                onclick="openBirthdayWizard()"
+                class="p-3.5 rounded-full bg-gradient-to-r from-pink-500 via-rose-500 to-indigo-600 hover:from-pink-400 hover:via-rose-400 hover:to-indigo-500 border border-pink-400/50 text-white hover:scale-110 active:scale-95 transition-all shadow-xl shadow-pink-500/30 focus:outline-none flex items-center gap-2.5 text-sm font-black tracking-wide relative overflow-hidden bday-shaking-btn"
+                title="مفاجأة عيد الميلاد 🎁"
+            >
+                <!-- Glowing indicator dot -->
+                <span class="absolute top-1 right-1 flex h-2 w-2">
+                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-pink-400 opacity-75"></span>
+                    <span class="relative inline-flex rounded-full h-2 w-2 bg-pink-500"></span>
+                </span>
+                <span class="gift-icon-anim text-lg">🎁</span>
+                <span class="hidden md:inline relative z-10 font-bold">مفاجأة عيد الميلاد</span>
+            </button>
+            <button
+                onclick="lockSpace()"
+                class="p-3 rounded-full bg-[#091528]/80 backdrop-blur-md border border-red-500/20 text-red-400 hover:text-red-300 hover:bg-red-950/40 hover:scale-105 active:scale-95 transition-all shadow-lg focus:outline-none flex items-center gap-2 text-sm font-semibold"
+                title="إغلاق المساحة"
+            >
+                <i data-lucide="log-out" class="w-4 h-4"></i>
+                <span class="hidden sm:inline">قفل المساحة</span>
+            </button>
+        </div>
+
+        <!-- Right/Main Content Column -->
+        <div class="w-full lg:flex-1">
+            
+            <!-- Application Header -->
+            <header class="text-center mt-8 mb-12">
+                <div class="inline-block mb-4 animate-bounce duration-[2000ms]">
+                    <span class="text-5xl drop-shadow-[0_0_15px_rgba(56,189,248,0.5)]">💙</span>
+                </div>
+                <h1 class="text-3xl sm:text-5xl font-black text-white tracking-tight mb-3 flex items-center justify-center gap-3">
+                    <span class="bg-gradient-to-r from-sky-400 via-[#4facfe] to-indigo-400 bg-clip-text text-transparent drop-shadow-sm font-bold">
+                        إلى ريمة اللطيفة
+                    </span>
+                    <i data-lucide="sparkles" class="w-6 h-6 sm:w-8 sm:h-8 text-sky-400 animate-pulse"></i>
+                </h1>
+                <p class="text-slate-400 text-base sm:text-lg max-w-xl mx-auto font-light leading-relaxed">
+                    مساحة هادئة مليئة بالدفء، الأمل، والذكريات الجميلة 🌿🌸
+                </p>
+            </header>
+
+            <!-- Enya Music Player Section -->
+            <section class="mb-10">
+                <div class="w-full max-w-md mx-auto">
+                    <!-- Hidden Audio Tag -->
+                    <audio id="bg-audio" src="https://www.dropbox.com/scl/fi/icyv8hdyrcqb18sil2r6r/Birthday-MUSIC.mp3?rlkey=25swfltspgewdd15b07ksz1nj&st=gpo4bq8j&dl=1"></audio>
+
+                    <div class="bg-gradient-to-br from-[#0c1d38] to-[#091528] border border-sky-500/20 rounded-3xl p-5 shadow-2xl relative overflow-hidden backdrop-blur-md">
+                        <!-- Decorative background glows -->
+                        <div class="absolute top-0 right-0 w-32 h-32 bg-sky-500/5 rounded-full blur-2xl pointer-events-none"></div>
+                        <div class="absolute bottom-0 left-0 w-32 h-32 bg-indigo-500/5 rounded-full blur-2xl pointer-events-none"></div>
+
+                        <!-- Player Info Layout -->
+                        <div class="flex items-center gap-4 mb-4">
+                            <!-- Vinyl record cover -->
+                            <div class="relative w-16 h-16 flex-shrink-0">
+                                <div id="vinyl-disc" class="w-full h-full rounded-full bg-gradient-to-tr from-sky-400 to-indigo-600 p-0.5 shadow-lg flex items-center justify-center overflow-hidden transition-transform duration-1000 ease-linear">
+                                    <div class="w-full h-full rounded-full bg-[#050b14] flex items-center justify-center relative">
+                                        <div class="w-4 h-4 rounded-full bg-sky-400/80 absolute z-10"></div>
+                                        <div class="w-12 h-12 rounded-full border border-sky-500/10"></div>
+                                        <div class="w-8 h-8 rounded-full border border-sky-500/20"></div>
+                                        <i data-lucide="music" class="w-5 h-5 text-sky-300 opacity-60"></i>
+                                    </div>
+                                </div>
+                                <span id="player-dot" class="absolute top-0 right-0 flex h-3.5 w-3.5 hidden">
+                                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                                    <span class="relative inline-flex rounded-full h-3.5 w-3.5 bg-emerald-500"></span>
+                                </span>
+                            </div>
+
+                            <!-- Title and Artist -->
+                            <div class="flex-1 min-w-0 text-right">
+                                <h3 class="font-bold text-sky-300 text-lg tracking-tight truncate">
+                                    Happy Birthday Reeemi 🎁🎉
+                                </h3>
+                                <p class="text-sm text-slate-400 font-medium">سنة حلوة يا ريمة ✨</p>
+                                <div class="mt-1 flex items-center gap-2">
+                                    <span id="player-status-badge" class="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-semibold bg-sky-950 text-sky-300 border border-sky-800/30">
+                                        متوقف مؤقتاً ⏸️
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Playing interactive waves -->
+                        <div class="h-8 flex items-center justify-center gap-1.5 mb-4 px-2 overflow-hidden">
+                            <div id="player-waves-flat" class="w-full border-t border-dashed border-sky-500/20"></div>
+                            <div id="player-waves-animated" class="flex gap-1 items-center justify-center hidden w-full">
+                                <!-- Wave bars generated by JS -->
+                            </div>
+                        </div>
+
+                        <!-- Seek Slider -->
+                        <div class="mb-4">
+                            <input
+                                id="music-seek"
+                                type="range"
+                                min="0"
+                                max="100"
+                                value="0"
+                                class="w-full h-1.5 bg-slate-800 rounded-lg appearance-none cursor-pointer accent-sky-400 focus:outline-none"
+                                oninput="seekMusic(this.value)"
+                            />
+                            <div class="flex justify-between text-xs text-slate-400 font-mono mt-1.5" dir="ltr">
+                                <span id="current-time">0:00</span>
+                                <span id="total-time">0:00</span>
+                            </div>
+                        </div>
+
+                        <!-- Player Controls -->
+                        <div class="flex items-center justify-between gap-4 pt-1">
+                            <button
+                                onclick="togglePlayMusic()"
+                                class="w-12 h-12 rounded-full bg-gradient-to-br from-sky-400 to-indigo-600 text-white flex items-center justify-center shadow-lg hover:shadow-sky-500/20 hover:scale-105 active:scale-95 transition-all focus:outline-none"
+                                title="تشغيل / إيقاف مؤقت"
+                            >
+                                <i id="play-pause-icon" data-lucide="play" class="w-5 h-5 fill-white translate-x-[-1px]"></i>
+                            </button>
+
+                            <!-- Volume Panel -->
+                            <div class="flex items-center gap-2 flex-1 max-w-[180px]">
+                                <button
+                                    onclick="toggleMuteMusic()"
+                                    class="text-sky-300/80 hover:text-sky-300 p-1.5 hover:bg-sky-950/40 rounded-full transition-colors focus:outline-none"
+                                >
+                                    <i id="volume-icon" data-lucide="volume-2" class="w-5 h-5"></i>
+                                </button>
+                                <input
+                                    id="music-volume"
+                                    type="range"
+                                    min="0"
+                                    max="1"
+                                    step="0.01"
+                                    value="0.4"
+                                    class="w-full h-1 bg-slate-800 rounded-lg appearance-none cursor-pointer accent-sky-400 focus:outline-none"
+                                    oninput="changeVolume(this.value)"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Memory Grid -->
+            <section class="mb-12">
+                <div class="flex items-center justify-between mb-6 pb-2 border-b border-sky-500/10">
+                    <button
+                        onclick="openQuickAddModal()"
+                        class="px-4 py-2 text-xs font-bold rounded-xl bg-gradient-to-r from-sky-500 to-indigo-600 hover:from-sky-400 hover:to-indigo-500 text-white flex items-center gap-1.5 shadow-lg shadow-sky-500/10 transition-all active:scale-95"
+                    >
+                        <i data-lucide="plus" class="w-3.5 h-3.5"></i>
+                        <span>إضافة ذكرى جديدة ✨</span>
+                    </button>
+                    <h2 class="text-xl font-bold text-white flex items-center gap-2">
+                        <span>صندوق الذكريات الدافئة 🌸</span>
+                        <i data-lucide="heart" class="w-5 h-5 text-pink-400 fill-pink-400/20"></i>
+                    </h2>
+                </div>
+
+                <!-- Grid container for Cards -->
+                <div id="memories-grid" class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
+                    <!-- Loaded dynamically via JavaScript -->
+                </div>
+            </section>
+
+        </div>
+
+        <!-- Left Column (Serenity Console / Status Desk) -->
+        <aside class="w-full lg:w-[320px] xl:w-[360px] shrink-0 flex flex-col gap-6">
+            
+            <!-- Serenity Console Card -->
+            <div class="relative overflow-hidden rounded-3xl border border-sky-500/20 bg-[#071324]/40 backdrop-blur-xl p-6 shadow-2xl flex flex-col gap-6 text-right group">
+                <div class="absolute top-[-30%] left-[-20%] w-48 h-48 bg-sky-500/10 rounded-full blur-3xl pointer-events-none"></div>
+                <div class="absolute bottom-[-20%] right-[-10%] w-48 h-48 bg-indigo-500/10 rounded-full blur-3xl pointer-events-none"></div>
+                <div class="absolute top-0 left-0 w-1.5 h-full bg-gradient-to-b from-sky-400 via-sky-500 to-indigo-600"></div>
+
+                <div class="flex items-center justify-between pb-4 border-b border-sky-500/10">
+                    <span class="text-[11px] font-bold text-sky-400/80 px-2 py-0.5 rounded-md bg-sky-500/10 border border-sky-500/20">
+                        لوحة تفاعلية
+                    </span>
+                    <div class="flex items-center gap-2">
+                        <h3 class="text-sm font-black text-white tracking-wide">
+                            نافذة السكينة لـ ريمة 🌿
+                        </h3>
+                        <i data-lucide="sparkles" class="w-4 h-4 text-sky-400 animate-pulse"></i>
+                    </div>
+                </div>
+
+                <!-- Clock -->
+                <div class="flex flex-col items-center justify-center py-3 px-4 rounded-2xl bg-slate-950/40 border border-sky-500/10 relative">
+                    <div class="absolute top-2 right-3 flex items-center gap-1 text-[9px] text-slate-500 font-mono">
+                        <span>الزمن الهادئ</span>
+                        <i data-lucide="clock" class="w-2.5 h-2.5"></i>
+                    </div>
+                    <span id="digital-clock" class="text-xl sm:text-2xl font-bold font-mono tracking-widest text-sky-300 drop-shadow-[0_0_8px_rgba(56,189,248,0.3)] mt-2">
+                        جاري التحميل...
+                    </span>
+                </div>
+
+                <!-- Quote Box -->
+                <div class="flex flex-col gap-2 relative">
+                    <div class="flex items-center justify-between text-[11px] text-slate-400 font-semibold px-1">
+                        <button
+                            onclick="cycleInspirationalQuote()"
+                            class="flex items-center gap-1 text-sky-400 hover:text-sky-300 transition-colors focus:outline-none"
+                            title="رسالة أخرى"
+                        >
+                            <i data-lucide="refresh-cw" class="w-3.5 h-3.5 hover:rotate-45 transition-transform"></i>
+                            <span>تغيير الهمسة</span>
+                        </button>
+                        <span class="flex items-center gap-1 text-pink-400">
+                            <span>همسة من القلب لرواد الهدوء</span>
+                            <i data-lucide="smile" class="w-3.5 h-3.5"></i>
+                        </span>
+                    </div>
+
+                    <div class="bg-[#0b1b30]/60 border border-sky-500/10 p-4 rounded-2xl min-h-[96px] flex items-center justify-center">
+                        <p id="inspirational-quote" class="text-xs sm:text-sm text-slate-200 leading-relaxed font-medium text-right italic transition-opacity duration-300"></p>
+                    </div>
+                </div>
+
+                <!-- Stats and Status -->
+                <div class="space-y-3 pt-3 border-t border-sky-500/10">
+                    <div class="flex justify-between items-center text-xs">
+                        <span id="memories-counter" class="font-mono text-sky-300 bg-sky-500/10 border border-sky-500/20 px-2 py-0.5 rounded-lg font-bold">
+                            5 كروت
+                        </span>
+                        <span class="text-slate-400 flex items-center gap-1">
+                            <span>الذكريات الموثقة بصندوقكِ</span>
+                            <i data-lucide="star" class="w-3.5 h-3.5 text-sky-400"></i>
+                        </span>
+                    </div>
+
+                    <div class="flex justify-between items-center text-xs">
+                        <div class="flex items-center gap-1.5">
+                            <span class="relative flex h-2 w-2">
+                                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                                <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+                            </span>
+                            <span class="font-bold text-emerald-400">مطمئنة ودافئة جداً 🕊️</span>
+                        </div>
+                        <span class="text-slate-400 flex items-center gap-1">
+                            <span>أجواء المحيط والمساحة</span>
+                            <i data-lucide="shield-check" class="w-3.5 h-3.5 text-emerald-400"></i>
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Send Positive Energy Button -->
+                <button
+                    onclick="triggerHeartSplash()"
+                    class="w-full py-3 px-4 rounded-xl bg-gradient-to-r from-sky-500 via-[#4facfe] to-indigo-600 hover:from-sky-400 hover:to-indigo-500 text-white text-xs font-bold flex items-center justify-center gap-2 shadow-lg shadow-sky-500/10 hover:shadow-sky-500/20 transition-all border border-sky-400/20"
+                >
+                    <i data-lucide="heart" class="w-4 h-4 text-pink-200 fill-pink-200/20 animate-pulse"></i>
+                    <span>أرسلي طاقة إيجابية للمساحة 💖</span>
+                </button>
+            </div>
+
+            <!-- Mini Quote footer panel -->
+            <div class="hidden lg:flex flex-col gap-1.5 p-5 rounded-2xl bg-gradient-to-tr from-[#0a182b]/30 to-[#0c1d38]/40 border border-sky-500/5 text-right relative">
+                <span class="text-[10px] font-mono text-sky-400/40 absolute top-2 left-3">AESTHETIC</span>
+                <p class="text-[11px] text-slate-400 leading-relaxed font-light">
+                    "لأن السكينة ليست مكاناً نذهب إليه، بل حالة نصنعها ونشاركها بكل حب مع من يملأون حياتنا نوراً ودعماً عفوياً."
+                </p>
+            </div>
+        </aside>
+
+    </div>
+
+
+    <!-- BIRTHDAY WIZARD MODAL SCREEN -->
+    <div id="birthday-wizard" class="fixed inset-0 z-50 bg-[#050b14]/98 backdrop-blur-2xl flex items-center justify-center p-4 overflow-y-auto hidden">
+        <!-- Background glows -->
+        <div class="absolute inset-0 bg-gradient-to-tr from-sky-950/20 via-slate-950 to-[#050b14] pointer-events-none z-0"></div>
+
+        <!-- Flying confetti/stars container -->
+        <div id="birthday-hearts-bg" class="absolute inset-0 pointer-events-none overflow-hidden z-0"></div>
+
+        <!-- Wizard Panel -->
+        <div class="relative w-full max-w-xl mx-auto z-10 py-6">
+            <!-- Close wizard button -->
+            <button
+                onclick="closeBirthdayWizard()"
+                class="absolute top-[-30px] left-2 flex items-center gap-1.5 text-xs text-slate-400 hover:text-white transition-colors py-1 px-3.5 bg-slate-900/60 rounded-full border border-sky-500/10"
+            >
+                <i data-lucide="x" class="w-3.5 h-3.5"></i>
+                <span>تخطي المشهد</span>
+            </button>
+
+            <!-- ================= STEP 1: THE GIFT ================= -->
+            <div id="bday-step-gift" class="text-center px-4">
+                <div class="mb-6">
+                    <span class="inline-block px-3 py-1 rounded-full text-xs font-semibold bg-sky-950/60 text-sky-300 border border-sky-800/30 animate-pulse">
+                        مفاجأة خاصة بالانتظار... 🎁✨
+                    </span>
+                </div>
+                
+                <h2 class="text-2xl sm:text-3xl font-black text-white mb-8">
+                    لديكِ هدية عيد ميلاد أنيقة لم تفتح بعد! 💙
+                </h2>
+
+                <div class="relative py-12 flex justify-center">
+                    <div 
+                        onclick="bdayGotoStep('candle')"
+                        class="cursor-pointer group relative w-48 h-48 sm:w-56 sm:h-56 transform hover:scale-110 duration-350"
+                    >
+                        <div class="absolute inset-0 bg-gradient-to-tr from-sky-400 to-indigo-600 rounded-3xl opacity-20 blur-2xl group-hover:opacity-40 transition-opacity"></div>
+
+                        <!-- Gift container box -->
+                        <div class="relative w-full h-full bg-gradient-to-b from-[#0c1d38] to-[#060e1a] border-2 border-sky-400/40 rounded-3xl p-6 flex flex-col items-center justify-center shadow-2xl overflow-hidden">
+                            <div class="absolute inset-y-0 w-6 bg-gradient-to-b from-sky-400 via-indigo-500 to-sky-400 left-1/2 -translate-x-1/2 opacity-80"></div>
+                            <div class="absolute inset-x-0 h-6 bg-gradient-to-r from-sky-400 via-indigo-500 to-sky-400 top-1/2 -translate-y-1/2 opacity-80"></div>
+
+                            <div class="absolute top-4 text-5xl z-15 select-none animate-bounce">🎀</div>
+                            <div class="absolute top-12 left-8 text-sky-300 text-lg">✨</div>
+                            <div class="absolute bottom-12 right-8 text-indigo-300 text-lg">✨</div>
+
+                            <div class="absolute bottom-4 left-1/2 -translate-x-1/2 bg-[#050b14]/80 backdrop-blur-md px-3 py-1 rounded-full border border-sky-400/30 text-[11px] font-bold text-sky-300 tracking-wider">
+                                انقري للفتح ✨
+                            </div>
+
+                            <i data-lucide="gift" class="w-16 h-16 text-sky-400 z-10 group-hover:scale-110 duration-350 drop-shadow-[0_0_15px_rgba(56,189,248,0.4)]"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <p class="text-slate-400 text-sm max-w-sm mx-auto mt-6">
+                    اضغطي على علبة الهدية بلهفة وحب لتكتشفي ما بداخلها... 🫶
+                </p>
+            </div>
+
+            <!-- ================= STEP 2: THE CANDLE ================= -->
+            <div id="bday-step-candle" class="text-center px-4 hidden">
+                <div class="mb-4">
+                    <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-indigo-950/60 text-indigo-300 border border-indigo-800/30">
+                        <span class="w-1.5 h-1.5 rounded-full bg-amber-400 animate-ping"></span>
+                        اصنعي أمنية دافئة في قلبكِ... 🎂✨
+                    </span>
+                </div>
+
+                <h2 class="text-xl sm:text-2xl font-bold text-white mb-6">
+                    شمعة عيد الميلاد تضيء لأجلكِ.. ستنطفئ تلقائياً بعد <span id="candle-timer-text" class="text-amber-400 font-mono">10</span> ثوانٍ
+                </h2>
+
+                <div class="relative py-12 flex flex-col items-center justify-center min-h-[250px]">
+                    <div id="candle-halo" class="absolute w-64 h-64 bg-amber-500/20 rounded-full blur-3xl pointer-events-none glow-pulse"></div>
+
+                    <!-- Candle -->
+                    <div class="relative flex flex-col items-center">
+                        <!-- Flame -->
+                        <div id="candle-flame-element" class="relative z-10 flex flex-col items-center">
+                            <div class="absolute w-12 h-12 bg-amber-500/40 rounded-full blur-md -top-6"></div>
+                            <div class="candle-flame w-6 h-12 bg-gradient-to-b from-amber-300 via-amber-500 to-red-500 rounded-b-full rounded-t-full origin-bottom shadow-[0_0_20px_rgba(245,158,11,0.6)]"></div>
+                            <div class="absolute w-2 h-4 bg-sky-400 rounded-full bottom-0 opacity-80 blur-[1px]"></div>
+                        </div>
+
+                        <!-- Wick -->
+                        <div class="w-1 h-3 bg-slate-800 rounded-t"></div>
+
+                        <!-- Candle Body -->
+                        <div class="relative w-12 h-36 bg-gradient-to-r from-sky-400 via-sky-500 to-indigo-600 rounded-lg shadow-lg flex flex-col justify-between overflow-hidden">
+                            <div class="absolute inset-0 opacity-20 bg-[repeating-linear-gradient(45deg,transparent,transparent_10px,#fff_10px,#fff_20px)]"></div>
+                            <div class="w-3 h-5 bg-sky-300 rounded-full absolute top-[-2px] left-2 opacity-80"></div>
+                            <div class="w-2.5 h-3 bg-sky-300 rounded-full absolute top-[-1px] right-3 opacity-90"></div>
+                            <div class="h-1 bg-indigo-900/50 w-full mt-auto"></div>
+                        </div>
+
+                        <!-- Candle Stand -->
+                        <div class="w-24 h-3 bg-gradient-to-r from-slate-700 via-slate-800 to-slate-900 rounded-full shadow-md mt-[-2px]"></div>
+                    </div>
+                </div>
+
+                <!-- Progress Bar -->
+                <div class="w-full max-w-xs mx-auto bg-slate-950/60 rounded-full h-1.5 overflow-hidden border border-sky-500/10 mt-6">
+                    <div id="candle-progress-fill" class="h-full bg-gradient-to-r from-sky-400 to-amber-400 w-full transition-all duration-1000 ease-linear"></div>
+                </div>
+            </div>
+
+            <!-- ================= STEP 3: THE CELEBRATION ================= -->
+            <div id="bday-step-celeb" class="text-center px-4 py-8 hidden">
+                <div class="inline-block mb-4 animate-bounce">
+                    <i data-lucide="heart" class="w-16 h-16 text-sky-400 fill-sky-400/20 drop-shadow-[0_0_20px_rgba(56,189,248,0.5)]"></i>
+                </div>
+
+                <h1 class="text-3xl sm:text-5xl font-black text-transparent bg-clip-text bg-gradient-to-r from-sky-300 via-white to-pink-300 leading-tight mb-6 drop-shadow-md">
+                    Happy birthday reeeemi 😶😍💙💙💙
+                </h1>
+
+                <p class="text-slate-400 text-sm max-w-sm mx-auto">
+                    تتساقط القلوب محبة لقلبكِ النقي في هذا اليوم الجميل... ✨🦢
+                </p>
+            </div>
+
+            <!-- ================= STEP 4: THE ENVELOPE ================= -->
+            <div id="bday-step-envelope" class="text-center px-4 hidden">
+                <div class="mb-4">
+                    <span class="inline-block px-3 py-1 rounded-full text-xs font-semibold bg-sky-950/60 text-sky-300 border border-sky-800/30">
+                        وصلت رسالة خاصة... 💌🌸
+                    </span>
+                </div>
+
+                <h2 class="text-xl sm:text-2xl font-bold text-white mb-8">
+                    ظرف رسالة كلاسيكي مختوم باسمكِ
+                </h2>
+
+                <div class="py-12 flex justify-center">
+                    <div 
+                        onclick="bdayGotoStep('letter')"
+                        class="cursor-pointer group relative w-72 h-44 sm:w-80 sm:h-48 transform hover:scale-105 duration-350"
+                    >
+                        <div class="absolute inset-0 bg-gradient-to-tr from-sky-500/10 to-indigo-500/10 rounded-2xl blur-xl pointer-events-none"></div>
+
+                        <div class="w-full h-full bg-gradient-to-br from-slate-100 to-slate-200 rounded-2xl shadow-2xl relative border border-slate-300/40 overflow-hidden flex items-center justify-center">
+                            <!-- Triangular flap -->
+                            <div class="absolute top-0 inset-x-0 h-[50%] bg-gradient-to-b from-slate-200 to-slate-300 border-b border-slate-300/60" style="clip-path: polygon(0 0, 100% 0, 50% 100%);"></div>
+                            <div class="absolute inset-y-0 left-0 w-[50%] bg-gradient-to-r from-slate-200/50 to-slate-300/30" style="clip-path: polygon(0 0, 100% 50%, 0 100%);"></div>
+                            <div class="absolute inset-y-0 right-0 w-[50%] bg-gradient-to-l from-slate-200/50 to-slate-300/30" style="clip-path: polygon(100% 0, 0 50%, 100% 100%);"></div>
+
+                            <!-- Wax stamp -->
+                            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-20 w-14 h-14 bg-red-600 rounded-full flex items-center justify-center shadow-lg border border-red-500/30">
+                                <i data-lucide="heart" class="w-6 h-6 text-white fill-white animate-pulse"></i>
+                                <div class="absolute inset-1 border border-dashed border-red-400/40 rounded-full pointer-events-none"></div>
+                            </div>
+
+                            <div class="absolute bottom-3 text-slate-500 text-[10px] tracking-wide font-mono z-10 font-bold">
+                                ريمة 🤍 Reemi
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <p class="text-slate-400 text-sm max-w-sm mx-auto mt-4">
+                    انقري فوق الختم الشمعي الأحمر لفض الرسالة وقراءتها... 🥰✍️
+                </p>
+            </div>
+
+            <!-- ================= STEP 5: THE LETTER ================= -->
+            <div id="bday-step-letter" class="text-right px-2 hidden">
+                <div class="w-full bg-[#f8f9fa] text-slate-900 rounded-3xl p-6 sm:p-10 shadow-2xl border-4 border-double border-amber-800/10 max-h-[80vh] overflow-y-auto relative">
+                    
+                    <div class="flex justify-center mb-6">
+                        <div class="w-12 h-12 rounded-full bg-amber-800/10 flex items-center justify-center border border-amber-800/20">
+                            <span class="text-xl">🦢</span>
+                        </div>
+                    </div>
+
+                    <!-- English Poetic Section -->
+                    <div class="font-sans text-left text-slate-800 italic leading-relaxed space-y-4 mb-6 border-b border-amber-800/10 pb-6">
+                        <p class="text-base sm:text-lg font-medium text-amber-900">
+                            The Artist in my eyes.... the one and only to my heart.... 
+                        </p>
+                        <p class="text-sm sm:text-base text-slate-600">
+                            My loveee Reema, I wish you a year filled with happiness and success, with more flowers and butterflies in your kind heart.
+                        </p>
+                    </div>
+
+                    <!-- Arabic Poetic Section -->
+                    <div class="space-y-4 text-slate-800 text-base sm:text-lg leading-relaxed font-sans text-right">
+                        <p class="font-bold text-amber-900 text-lg sm:text-xl">إلى ريمة...</p>
+                        <p>كل عام وأنتِ بخير .</p>
+                        <p>أتمنى أن تكون هذه السنة سنة خير وسعادة وسلام عليكِ وعلينا، وأن يملأ الله قلبكِ بالفرح والسرور وراحة البال والنجاح ويحقق كل ما تتمنينه.</p>
+                        <p>أحب أن أراكِ يا ريمة تبدعين بكل موهبة تملكينها من فن وهواية وشغف تحبينه...</p>
+                        <p class="font-bold text-amber-900">كل ما في داخل قلبي هو لكِ.</p>
+
+                        <div class="py-2 border-y border-amber-800/5 my-4 text-center">
+                            <p class="font-sans font-black tracking-wide text-amber-900 text-sm">Artist before a dentist.</p>
+                        </div>
+
+                        <p>أنتِ بقلبي في كل لحظة تمر من أمسٍ واليوم وغداً وغداً وغداً... كوني سعيدة.</p>
+                        <p>لا يليق بوجهكِ وقلبكِ إلا الابتسامة والتفاؤل والسعادة.</p>
+                        <p class="font-medium text-slate-700">أتمنى أن تصنع هذه الكلمات البسيطة من قلبي إليكِ شيئاً تحول كل ما تشعرين به إلى شيء أفضل.</p>
+                    </div>
+
+                    <div class="mt-8 pt-6 border-t border-amber-800/10 flex justify-between items-center text-sm">
+                        <span class="font-mono text-slate-400 font-bold">8314 "Anas" 🦢❤️</span>
+                        <p class="font-serif italic font-bold text-amber-900">My best wishes to you</p>
+                    </div>
+
+                    <div class="mt-8 flex justify-center">
+                        <button
+                            onclick="closeBirthdayWizard()"
+                            class="bg-gradient-to-r from-amber-800 to-amber-950 text-white font-bold py-2 px-8 rounded-xl text-xs sm:text-sm hover:from-amber-700 hover:to-amber-900 active:scale-95 transition-all shadow-md flex items-center gap-1.5"
+                        >
+                            <i data-lucide="check" class="w-4 h-4"></i>
+                            <span>إغلاق وقبول التهنئة 💙</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- COMPONENT DETAIL MODAL (VIEW / EDIT CARD DETAILS) -->
+    <div id="memory-modal" class="fixed inset-0 z-50 bg-[#050b14]/90 backdrop-blur-xl flex items-center justify-center p-4 overflow-y-auto hidden">
+        <div class="w-full max-w-2xl bg-[#091528]/95 border border-sky-500/20 rounded-3xl overflow-hidden shadow-2xl relative">
+            
+            <!-- Close modal -->
+            <button onclick="closeMemoryModal()" class="absolute top-4 left-4 z-10 w-9 h-9 rounded-full bg-slate-950/60 border border-sky-500/10 text-slate-400 hover:text-white flex items-center justify-center transition-all">
+                <i data-lucide="x" class="w-5 h-5"></i>
+            </button>
+
+            <!-- Modal Content (Dynamic) -->
+            <div id="modal-body-wrapper" class="p-6 md:p-8">
+                <!-- Switched by JS between VIEW and EDIT states -->
+            </div>
+        </div>
+    </div>
+
+
+    <!-- QUICK ADD NEW CARD MODAL -->
+    <div id="quick-add-modal" class="fixed inset-0 z-50 bg-[#050b14]/90 backdrop-blur-xl flex items-center justify-center p-4 hidden">
+        <div class="w-full max-w-md bg-[#091528] border border-sky-500/20 rounded-3xl p-6 shadow-2xl relative">
+            <button onclick="closeQuickAddModal()" class="absolute top-4 left-4 text-slate-400 hover:text-white">
+                <i data-lucide="x" class="w-5 h-5"></i>
+            </button>
+
+            <h3 class="text-lg font-bold text-white mb-4 text-right flex items-center gap-1.5 justify-end">
+                <span>جلب وتوثيق صورة جديدة 📸</span>
+                <i data-lucide="image" class="w-5 h-5 text-sky-400"></i>
+            </h3>
+
+            <div class="space-y-4 text-right">
+                <!-- Title input -->
+                <div>
+                    <label class="block text-xs font-bold text-slate-400 mb-1.5">عنوان الذكرى</label>
+                    <input id="qa-title" type="text" placeholder="مثال: لحظة دافئة 🌸" class="w-full bg-slate-950/60 border border-sky-500/10 rounded-xl px-4 py-2.5 text-white text-sm focus:outline-none focus:border-sky-400 focus:ring-1 focus:ring-sky-500/20">
+                </div>
+
+                <!-- URL input -->
+                <div>
+                    <label class="block text-xs font-bold text-slate-400 mb-1.5">رابط صفحة رفع الصورة أو الرابط المباشر</label>
+                    <input id="qa-url" type="text" oninput="detectUrlBadge()" placeholder="رابط Postimg / Imgbox / ibb أو رابط مباشر" class="w-full bg-slate-950/60 border border-sky-500/10 rounded-xl px-4 py-2.5 text-white text-sm focus:outline-none focus:border-sky-400 focus:ring-1 focus:ring-sky-500/20 font-mono text-left">
+                    <div id="qa-badge" class="mt-2 p-2 rounded-lg border text-xs leading-relaxed hidden"></div>
+                </div>
+
+                <!-- Caption input -->
+                <div>
+                    <label class="block text-xs font-bold text-slate-400 mb-1.5">وصف مصاحب سريع</label>
+                    <textarea id="qa-caption" rows="2" placeholder="وصف يعبر عن جمال هذه الصورة..." class="w-full bg-slate-950/60 border border-sky-500/10 rounded-xl px-4 py-2.5 text-white text-sm focus:outline-none focus:border-sky-400 focus:ring-1 focus:ring-sky-500/20"></textarea>
+                </div>
+
+                <!-- Save Action Button -->
+                <button
+                    onclick="saveQuickAddCard()"
+                    class="w-full py-3 rounded-xl bg-gradient-to-r from-sky-500 to-indigo-600 hover:from-sky-400 hover:to-indigo-500 text-white text-xs font-bold shadow-lg shadow-sky-500/10 transition-all flex items-center justify-center gap-1.5"
+                >
+                    <i data-lucide="plus" class="w-4 h-4"></i>
+                    <span>إضافة وتوثيق الكرت 💙</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- JAVASCRIPT CORE LOGIC -->
+    <script>
+        // Default seed memories matching standard design
+        //===MEMORIES_START===
+        const DEFAULT_MEMORIES = [
+          {
+                    "id": "1",
+                    "title": "محادثة دافئة 💬",
+                    "type": "image",
+                    "src": "https://i.postimg.cc/wjp1KRXW/image.png",
+                    "caption": "My Cookie pie 🫣💖",
+                    "details": "في محادثة ذلك اليوم هذه المحادثة تحمل في طياتها الكثير من الكلمات الطيبة التي لطفت يومي وغيّرت مزاجي للأفضل. الأثر الجميل يبقى دائماً في القلب ويعطي قوة ودافع للتفاؤل والاستمرار مهما كانت الصعوبات 🫶\nAnasssss you are my cookie piee 🫣\nفي ذلك اليوم ومحادثاتنا العميقة والدافئة قبل النوم وعيوننا ذابلة \"Sleepy eyes\" 😵‍💫🥸 مليئة بالحب والابتسامة مرسومة على وجهنا...\nما اجمل هذه اللحظات التي لاتخرج من ذاكرتي ولن تخرج لأنها كانت بصدق تدخل وتتعمق باعماق قلبي ✨💕",
+                    "subImages": []
+          },
+          {
+                    "id": "2",
+                    "title": "لحظة أمل 🌸",
+                    "type": "image",
+                    "src": "https://i.postimg.cc/xCKbF3mT/image.png",
+                    "caption": "Bla bla bla blaaaaa 🥸",
+                    "details": "تلك اللحظات التي نتشارك فيها الضحكات العفوية والأفكار المبدعة هي حجر الأساس لكل ذكرى سعيدة. تذكري دائماً أن تبتسمي، فضحكتكِ قادرة على جعل العالم مكاناً أجمل بكثير.\nبهاليوم حسيت انو سمعت صوت ضحكتك الصامتة 💙😆🫶",
+                    "subImages": []
+          },
+          {
+                    "id": "3",
+                    "title": "كلمات من القلب 🥺",
+                    "type": "text",
+                    "src": "",
+                    "caption": "شيء لطيف منكِ اتذكره",
+                    "details": "ريمة دائماً ما تصنع هذا الأثر الجميل بكلامها اللطيف ونقاء روحها العذبة.\nفي لقائنا الثاني اتذكر وبشدة من كنتِ تحكيلي على شيء سويتيه غلط وقلتي الي \nاجت ماما كالتلي \"ريييمة... هاي شنو سويتيي!!\" قلتيها بطريقة مميزة دخلت لقلبي وحبيت طريقة وصفك وسردك للاحداث 🫶",
+                    "subImages": []
+          },
+          {
+                    "id": "4",
+                    "title": "تفاصيل صغيرة ✨",
+                    "type": "image",
+                    "src": "https://i.postimg.cc/g0Lp9ck7/image.png",
+                    "caption": "Among million of hands around the world i only wish to hold your handsمن شفنا المسلسل مع بعض وارسلتي الي ريلز كان مكتوب بها هاي الجملة ورجعت ارسلتها لكِ هي ليست امنية فقط بل هي دعوة تتمناها قلوبنا \"وندعي الله ليستجب لها في الوقت المناسب\"",
+                    "details": "What we imagine  is what we will live \n\nمن شفنا المسلسل مع بعض وارسلتي الي ريلز كان مكتوب بها هاي الجملة ورجعت ارسلتها لكِ\nهي ليست امنية فقط بل هي دعوة تتمناها قلوبنا \"\nنصلي لأجلها 🙏\"",
+                    "subImages": []
+          },
+          {
+                    "id": "5",
+                    "title": "يوم الضحك والعفوية 💭",
+                    "type": "image",
+                    "src": "https://i.postimg.cc/zDFJtcyR/image.png",
+                    "caption": "يوم كان مليئاً بالضحك والعفوية والحب💭",
+                    "details": "يوم مذهل ومميز مليء بالبهجة والحديث الذي لا ينتهي، رغم انكِ كنتِ ضيعتي حلقة الاذن الي اشتريتيها ومالاقيتي اللون الي كان ببالك بس قدرنا نغير ونلطف الجو حيث كانت الضحكات تعلو والقلوب تتحدث بكل عفوية وصدق وبراءة، وتملأ الفراغ بطيبة بيننا",
+                    "subImages": [
+                              "https://i.postimg.cc/k4MjnGvK/image.png"
+                    ]
+          }
+];
+        //===MEMORIES_END===
+
+        const POSITIVE_QUOTES = [
+            "ريمة الجميلة.. تذكري دائماً أن وجودكِ يصنع فارقاً حقيقياً ونقياً في قلوبنا 🌿🤍",
+            "ابتسامتكِ اللطيفة قادرة على تبديد الغيوم وإدخال الدفء والسكينة لأي مكان تطلّين عليه ✨",
+            "أنتِ شخص يحمل في روحه إبداعاً خاصاً وعاطفة طيبة تترك أثراً جميلاً لا يزول 🎨💙",
+            "كلما شعرتِ بضغط اليوم، تذكري أن هذه المساحة الهادئة ترحب بكِ لتمنحكِ الراحة والاهتمام دائماً 🕊️",
+            "في قلبي لكِ أصدق الأمنيات بالسلام، والتوفيق، والبهجة الكبيرة التي تليق بنقاء روحكِ العذبة 🌸",
+            "خوش.. أنطيني بيبسي أنطيك بوشار! ضحكتكِ وعفويتكِ هي أثمن ما نملك 🍿🥤🍿",
+            "تأكدي أن كل فكرة تبتكرينها وكل تفصيل تهتمين به يضيف جمالاً وسحراً خاصاً للعالم 💫"
+        ];
+
+        // Global State variables
+        let memories = [];
+        let quoteIndex = 0;
+        let selectedMemory = null;
+        let isEditing = false;
+        let isMusicPlaying = false;
+        let isMusicMuted = false;
+        let musicVolume = 0.4;
+        let candleCountdownInterval = null;
+        let bdayStepTimeout = null;
+
+        // Image link automatic converter
+        function convertImgUrl(url) {
+            if (!url) return "";
+            let clean = url.trim();
+
+            // 1. Postimages (postimg.cc / postimages.org)
+            const postimgMatch = clean.match(/(?:https?:\/\/)?(?:www\.)?postimg\.cc\/([a-zA-Z0-9]+)/i);
+            if (postimgMatch) {
+                return `https://i.postimg.cc/${postimgMatch[1]}/image.png`;
+            }
+
+            // 2. Imgbox (imgbox.com)
+            const imgboxMatch = clean.match(/(?:https?:\/\/)?(?:www\.)?imgbox\.com\/([a-zA-Z0-9]{8})/i);
+            if (imgboxMatch) {
+                const id = imgboxMatch[1];
+                const part1 = id.substring(0, 2);
+                const part2 = id.substring(2, 4);
+                return `https://images2.imgbox.com/${part1}/${part2}/${id}_o.png`;
+            }
+
+            // 3. ImgBB (ibb.co)
+            const ibbMatch = clean.match(/(?:https?:\/\/)?(?:www\.)?ibb\.co\/([a-zA-Z0-9]+)/i);
+            if (ibbMatch) {
+                return `https://i.ibb.co/${ibbMatch[1]}/image.png`;
+            }
+
+            return clean;
+        }
+
+        // On Page Load
+        window.addEventListener('DOMContentLoaded', () => {
+            // Load custom stored memory list
+            const saved = localStorage.getItem("our_space_memories");
+            if (saved) {
+                try {
+                    memories = JSON.parse(saved);
+                    // Auto-migrate memory ID 4 if it contains the old default caption
+                    memories = memories.map((m) => {
+                        if (m.id === "4" && (m.caption === "تفاصيل صغيرة لكنها تعني لي الكثير ✨" || m.caption.includes("تفاصيل صغيرة"))) {
+                            return {
+                                ...m,
+                                caption: `من شفنا المسلسل مع بعض وارسلتي الي ريلز كان مكتوب بها هاي الجملة ورجعت ارسلتها لكِ
+هي ليست امنية فقط بل هي دعوة تتمناها قلوبنا "
+وندعي الله ليستجب لها في الوقت المناسب"`,
+                                details: `من شفنا المسلسل مع بعض وارسلتي الي ريلز كان مكتوب بها هاي الجملة ورجعت ارسلتها لكِ
+هي ليست امنية فقط بل هي دعوة تتمناها قلوبنا "
+وندعي الله ليستجب لها في الوقت المناسب"`
+                            };
+                        }
+                        return m;
+                    });
+
+                    localStorage.setItem("our_space_memories", JSON.stringify(memories));
+                } catch(e) {
+                    memories = [...DEFAULT_MEMORIES];
+                }
+            } else {
+                memories = [...DEFAULT_MEMORIES];
+            }
+
+            // Check Lock state
+            const savedUnlock = localStorage.getItem("our_space_unlocked");
+            if (savedUnlock === "true") {
+                revealAppInstantly();
+            }
+
+            renderMemories();
+            updateDigitalClock();
+            setInterval(updateDigitalClock, 1000);
+
+            // Cycle quotes on schedule
+            cycleInspirationalQuote();
+            setInterval(() => {
+                quoteIndex = (quoteIndex + 1) % POSITIVE_QUOTES.length;
+                cycleInspirationalQuote();
+            }, 15000);
+
+            // Populate Audio Wave visuals
+            generateAudioWaves();
+
+            // Setup Floating background elements
+            generateFloatingHearts();
+
+            // Initialize Lucide icons
+            lucide.createIcons();
+        });
+
+        // LOCK GATE CONTROL
+        function togglePasswordVisibility() {
+            const input = document.getElementById("password-input");
+            const eye = document.getElementById("password-eye");
+            if (input.type === "password") {
+                input.type = "text";
+                eye.setAttribute("data-lucide", "eye-off");
+            } else {
+                input.type = "password";
+                eye.setAttribute("data-lucide", "eye");
+            }
+            lucide.createIcons();
+        }
+
+        function handleUnlock() {
+            const pass = document.getElementById("password-input").value;
+            const error = document.getElementById("error-message");
+            if (pass === "8314") {
+                localStorage.setItem("our_space_unlocked", "true");
+                error.classList.add("hidden");
+                revealApp();
+                // Trigger Birthday Scenario
+                setTimeout(openBirthdayWizard, 1000);
+            } else {
+                error.textContent = "الرمز غير صحيح، حاول مرة أخرى 💔";
+                error.classList.remove("hidden");
+                document.getElementById("password-input").value = "";
+            }
+        }
+
+        function revealAppInstantly() {
+            const gate = document.getElementById("lock-screen");
+            const app = document.getElementById("main-content");
+            gate.classList.add("hidden");
+            app.classList.remove("hidden");
+            app.classList.add("opacity-100");
+        }
+
+        function revealApp() {
+            const gate = document.getElementById("lock-screen");
+            const app = document.getElementById("main-content");
+            gate.style.transform = "translateY(-110vh)";
+            setTimeout(() => {
+                gate.classList.add("hidden");
+                app.classList.remove("hidden");
+                setTimeout(() => {
+                    app.classList.add("opacity-100");
+                }, 50);
+            }, 700);
+        }
+
+        function lockSpace() {
+            localStorage.removeItem("our_space_unlocked");
+            location.reload();
+        }
+
+        // DIGITAL CLOCK
+        function updateDigitalClock() {
+            const now = new Date();
+            const clockEl = document.getElementById("digital-clock");
+            if (clockEl) {
+                clockEl.textContent = now.toLocaleTimeString("ar-EG", {
+                    hour: "2-digit",
+                    minute: "2-digit",
+                    second: "2-digit",
+                    hour12: true
+                });
+            }
+        }
+
+        // QUOTE CYCLER
+        function cycleInspirationalQuote() {
+            const el = document.getElementById("inspirational-quote");
+            if (el) {
+                el.style.opacity = "0";
+                setTimeout(() => {
+                    el.textContent = POSITIVE_QUOTES[quoteIndex];
+                    el.style.opacity = "1";
+                }, 300);
+            }
+        }
+
+        // AUDIO WAVE GENERATOR
+        function generateAudioWaves() {
+            const container = document.getElementById("player-waves-animated");
+            container.innerHTML = "";
+            for (let i = 0; i < 18; i++) {
+                const bar = document.createElement("div");
+                bar.className = "w-1 bg-gradient-to-t from-indigo-500 to-sky-400 rounded-full";
+                bar.style.height = "12px";
+                bar.style.animation = `pulse-glow ${0.5 + Math.random() * 0.8}s infinite ease-in-out alternate`;
+                bar.style.animationDelay = `${i * 0.03}s`;
+                container.appendChild(bar);
+            }
+        }
+
+        // BACKGROUND FLOATING HEARTS
+        function generateFloatingHearts() {
+            const container = document.getElementById("floating-elements-bg");
+            const icons = ["💙", "🌸", "✨", "💫", "🦢", "🍿"];
+            setInterval(() => {
+                const item = document.createElement("div");
+                item.className = "floating-heart text-lg md:text-2xl";
+                item.textContent = icons[Math.floor(Math.random() * icons.length)];
+                item.style.left = `${Math.random() * 100}vw`;
+                item.style.animationDuration = `${8 + Math.random() * 6}s`;
+                item.style.animationDelay = `${Math.random() * 2}s`;
+                container.appendChild(item);
+
+                // Cleanup
+                setTimeout(() => {
+                    item.remove();
+                }, 14000);
+            }, 1500);
+        }
+
+        // AMBIENT HEART SPLASH
+        function triggerHeartSplash() {
+            const splash = document.getElementById("heart-splash");
+            splash.classList.remove("opacity-0");
+            splash.classList.add("opacity-100");
+            setTimeout(() => {
+                splash.classList.remove("opacity-100");
+                splash.classList.add("opacity-0");
+            }, 1300);
+        }
+
+        // RENDER MEMORY CARDS
+        function renderMemories() {
+            const grid = document.getElementById("memories-grid");
+            const counter = document.getElementById("memories-counter");
+            grid.innerHTML = "";
+            counter.textContent = `${memories.length} كروت`;
+
+            memories.forEach((m) => {
+                const card = document.createElement("div");
+                card.className = "relative overflow-hidden rounded-3xl border border-sky-500/10 bg-[#071324]/35 hover:bg-[#09172c]/50 hover:border-sky-500/25 shadow-xl transition-all duration-300 flex flex-col group cursor-pointer transform hover:-translate-y-1.5";
+                card.setAttribute("onclick", `openMemoryModal('${m.id}')`);
+
+                // Image template vs Text template
+                let cardBodyHtml = "";
+                if (m.type === "image" && m.src) {
+                    cardBodyHtml = `
+                        <div class="relative w-full h-48 overflow-hidden bg-slate-950">
+                            <img src="${m.src}" alt="${m.title}" referrerpolicy="no-referrer" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent opacity-60"></div>
+                            <span class="absolute top-3 right-3 text-[10px] font-bold text-sky-400 bg-slate-950/80 px-2.5 py-1 rounded-full border border-sky-500/25">صورة 📸</span>
+                        </div>
+                    `;
+                } else {
+                    cardBodyHtml = `
+                        <div class="relative w-full h-48 overflow-hidden bg-slate-950/50 flex items-center justify-center p-6 border-b border-sky-500/5">
+                            <div class="absolute inset-0 bg-gradient-to-tr from-sky-900/10 to-indigo-900/10"></div>
+                            <p class="text-xs text-sky-300 leading-relaxed font-semibold italic text-center text-ellipsis overflow-hidden line-clamp-4">
+                                ${m.caption}
+                            </p>
+                            <span class="absolute top-3 right-3 text-[10px] font-bold text-pink-400 bg-slate-950/80 px-2.5 py-1 rounded-full border border-pink-500/25">همسة 💬</span>
+                        </div>
+                    `;
+                }
+
+                card.innerHTML = `
+                    ${cardBodyHtml}
+                    <div class="p-5 flex-1 flex flex-col gap-2.5 text-right relative">
+                        <!-- Delete option on hover -->
+                        <button onclick="deleteCard('${m.id}', event)" class="absolute top-3 left-3 w-8 h-8 rounded-full bg-red-950/40 border border-red-500/10 hover:border-red-500/40 hover:bg-red-500 text-red-400 hover:text-white flex items-center justify-center transition-all opacity-0 group-hover:opacity-100 z-10" title="حذف الذكرى">
+                            <i data-lucide="trash-2" class="w-3.5 h-3.5"></i>
+                        </button>
+
+                        <h3 class="font-bold text-white text-base tracking-wide">${m.title}</h3>
+                        <p class="text-xs text-slate-400 leading-relaxed whitespace-pre-wrap">${m.caption || ""}</p>
+                    </div>
+                `;
+
+                grid.appendChild(card);
+            });
+
+            // Re-initialize icons inside grid
+            lucide.createIcons();
+        }
+
+        // SAVE CHANGES TO DISK
+        function saveMemoriesToDisk() {
+            localStorage.setItem("our_space_memories", JSON.stringify(memories));
+            renderMemories();
+        }
+
+        // QUICK ADD IMAGE CARD
+        function openQuickAddModal() {
+            document.getElementById("quick-add-modal").classList.remove("hidden");
+            document.getElementById("qa-title").value = "";
+            document.getElementById("qa-url").value = "";
+            document.getElementById("qa-caption").value = "";
+            document.getElementById("qa-badge").classList.add("hidden");
+        }
+
+        function closeQuickAddModal() {
+            document.getElementById("quick-add-modal").classList.add("hidden");
+        }
+
+        function detectUrlBadge() {
+            const url = document.getElementById("qa-url").value.trim().toLowerCase();
+            const badge = document.getElementById("qa-badge");
+
+            if (!url) {
+                badge.classList.add("hidden");
+                return;
+            }
+
+            badge.classList.remove("hidden");
+            if (url.includes("postimg.cc") || url.includes("imgbox.com") || url.includes("ibb.co")) {
+                badge.className = "mt-2 p-2 rounded-lg border text-xs leading-relaxed text-amber-400 border-amber-500/20 bg-amber-500/5";
+                badge.textContent = "💡 تم اكتشاف صفحة رفع صور (Postimages / Imgbox / ImgBB) - سنقوم بتحويلها تلقائياً إلى رابط مباشر!";
+            } else if (url.endsWith(".png") || url.endsWith(".jpg") || url.endsWith(".jpeg") || url.endsWith(".webp") || url.endsWith(".gif")) {
+                badge.className = "mt-2 p-2 rounded-lg border text-xs leading-relaxed text-emerald-400 border-emerald-500/20 bg-emerald-500/5";
+                badge.textContent = "✅ تم جلب الرابط بنجاح! تم اكتشاف رابط صورة مباشر وصالح للعرض.";
+            } else {
+                badge.className = "mt-2 p-2 rounded-lg border text-xs leading-relaxed text-slate-400 border-slate-500/10 bg-slate-500/5";
+                badge.textContent = "ℹ️ تم إدخال رابط الصورة. سنقوم بجلبه وتحميله مباشرة.";
+            }
+        }
+
+        function saveQuickAddCard() {
+            const title = document.getElementById("qa-title").value.trim();
+            const rawUrl = document.getElementById("qa-url").value.trim();
+            const caption = document.getElementById("qa-caption").value.trim();
+
+            if (!rawUrl) {
+                alert("الرجاء إدخال رابط صورة صالح");
+                return;
+            }
+
+            const finalUrl = convertImgUrl(rawUrl);
+            const newCard = {
+                id: Date.now().toString(),
+                title: title || "تفاصيل جميلة ✨",
+                type: "image",
+                src: finalUrl,
+                caption: caption || "صورة دافئة مضافة برابط مباشر 🌸",
+                details: "صورة تم جلبها مباشرة برابط مباشر للصور وتوثيقها داخل صندوق الذكريات الدافئة لـ ريمة.",
+                subImages: []
+            };
+
+            memories.push(newCard);
+            saveMemoriesToDisk();
+            closeQuickAddModal();
+            triggerHeartSplash();
+        }
+
+        // DELETE CARD COMPLETELY
+        function deleteCard(id, event) {
+            event.stopPropagation();
+            if (confirm("هل أنتِ متأكدة من حذف هذه الذكرى الجميلة نهائياً؟ 🥺")) {
+                memories = memories.filter((m) => m.id !== id);
+                saveMemoriesToDisk();
+            }
+        }
+
+        // MUSIC PLAYER FUNCTIONALITY
+        const audio = document.getElementById("bg-audio");
+        const vinyl = document.getElementById("vinyl-disc");
+        const dot = document.getElementById("player-dot");
+        const badge = document.getElementById("player-status-badge");
+        const flatWaves = document.getElementById("player-waves-flat");
+        const animWaves = document.getElementById("player-waves-animated");
+        const seekSlider = document.getElementById("music-seek");
+        const playBtnIcon = document.getElementById("play-pause-icon");
+
+        // Set Default Volume
+        audio.volume = musicVolume;
+
+        function togglePlayMusic() {
+            if (isMusicPlaying) {
+                audio.pause();
+                isMusicPlaying = false;
+                vinyl.style.transform = "rotate(0deg)";
+                dot.classList.add("hidden");
+                badge.textContent = "متوقف مؤقتاً ⏸️";
+                flatWaves.classList.remove("hidden");
+                animWaves.classList.add("hidden");
+                playBtnIcon.setAttribute("data-lucide", "play");
+            } else {
+                audio.play()
+                    .then(() => {
+                        isMusicPlaying = true;
+                        vinyl.style.transform = "rotate(360deg)";
+                        dot.classList.remove("hidden");
+                        badge.textContent = "جاري التشغيل الآن 🎵";
+                        flatWaves.classList.add("hidden");
+                        animWaves.classList.remove("hidden");
+                        playBtnIcon.setAttribute("data-lucide", "pause");
+                    })
+                    .catch((err) => {
+                        console.log("Play failed: ", err);
+                    });
+            }
+            lucide.createIcons();
+        }
+
+        function toggleMuteMusic() {
+            isMusicMuted = !isMusicMuted;
+            audio.muted = isMusicMuted;
+            const volIcon = document.getElementById("volume-icon");
+            const volRange = document.getElementById("music-volume");
+
+            if (isMusicMuted) {
+                volIcon.setAttribute("data-lucide", "volume-x");
+                volRange.value = 0;
+            } else {
+                volIcon.setAttribute("data-lucide", "volume-2");
+                volRange.value = musicVolume;
+            }
+            lucide.createIcons();
+        }
+
+        function changeVolume(val) {
+            musicVolume = parseFloat(val);
+            audio.volume = musicVolume;
+            const volIcon = document.getElementById("volume-icon");
+
+            if (musicVolume === 0) {
+                volIcon.setAttribute("data-lucide", "volume-x");
+            } else {
+                volIcon.setAttribute("data-lucide", "volume-2");
+                isMusicMuted = false;
+                audio.muted = false;
+            }
+            lucide.createIcons();
+        }
+
+        audio.addEventListener("timeupdate", () => {
+            const current = document.getElementById("current-time");
+            const duration = document.getElementById("total-time");
+            
+            if (audio.duration) {
+                const percent = (audio.currentTime / audio.duration) * 100;
+                seekSlider.value = percent;
+                
+                current.textContent = formatTime(audio.currentTime);
+                duration.textContent = formatTime(audio.duration);
+            }
+        });
+
+        function seekMusic(val) {
+            if (audio.duration) {
+                const seekTo = (val / 100) * audio.duration;
+                audio.currentTime = seekTo;
+            }
+        }
+
+        function formatTime(sec) {
+            if (isNaN(sec)) return "0:00";
+            const mins = Math.floor(sec / 60);
+            const secs = Math.floor(sec % 60);
+            return `${mins}:${secs < 10 ? "0" : ""}${secs}`;
+        }
+
+
+        // DETAIL MODAL LOGIC (VIEW & EDIT FOR ANY CARD)
+        function openMemoryModal(id) {
+            selectedMemory = memories.find((m) => m.id === id);
+            if (!selectedMemory) return;
+
+            isEditing = false;
+            renderModalBody();
+            document.getElementById("memory-modal").classList.remove("hidden");
+            triggerHeartSplash();
+        }
+
+        function closeMemoryModal() {
+            document.getElementById("memory-modal").classList.add("hidden");
+            selectedMemory = null;
+        }
+
+        function renderModalBody() {
+            const wrapper = document.getElementById("modal-body-wrapper");
+            
+            if (isEditing) {
+                // EDIT STATE TEMPLATE
+                wrapper.innerHTML = `
+                    <div class="space-y-5 text-right">
+                        <div class="flex items-center justify-between pb-3 border-b border-sky-500/10">
+                            <button onclick="saveModalChanges()" class="px-4 py-1.5 bg-emerald-600 hover:bg-emerald-500 text-white rounded-xl text-xs font-bold transition-all">حفظ التعديلات ✅</button>
+                            <h3 class="text-base font-bold text-white">تعديل تفاصيل الذكرى 📝</h3>
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs text-slate-400 mb-1">نوع البطاقة</label>
+                                <select id="edit-type" onchange="toggleEditType(this.value)" class="w-full bg-slate-950/70 border border-sky-500/10 rounded-xl px-3 py-2 text-white text-xs focus:outline-none">
+                                    <option value="image" ${selectedMemory.type === 'image' ? 'selected' : ''}>كرت مع صورة</option>
+                                    <option value="text" ${selectedMemory.type === 'text' ? 'selected' : ''}>همسة نصية فقط</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-xs text-slate-400 mb-1">العنوان الفرعي</label>
+                                <input id="edit-title" type="text" value="${selectedMemory.title}" class="w-full bg-slate-950/70 border border-sky-500/10 rounded-xl px-3 py-2 text-white text-xs focus:outline-none">
+                            </div>
+                        </div>
+
+                        <div id="edit-image-row" class="${selectedMemory.type === 'text' ? 'hidden' : ''}">
+                            <label class="block text-xs text-slate-400 mb-1">رابط الصورة الرئيسية</label>
+                            <input id="edit-src" type="text" value="${selectedMemory.src || ''}" class="w-full bg-slate-950/70 border border-sky-500/10 rounded-xl px-3 py-2 text-white text-xs focus:outline-none font-mono text-left">
+                        </div>
+
+                        <div>
+                            <label class="block text-xs text-slate-400 mb-1">التعليق والوصف المصغر</label>
+                            <input id="edit-caption" type="text" value="${selectedMemory.caption || ''}" class="w-full bg-slate-950/70 border border-sky-500/10 rounded-xl px-3 py-2 text-white text-xs focus:outline-none">
+                        </div>
+
+                        <div>
+                            <label class="block text-xs text-slate-400 mb-1">القصة والتفاصيل العميقة</label>
+                            <textarea id="edit-details" rows="4" class="w-full bg-slate-950/70 border border-sky-500/10 rounded-xl px-3 py-2 text-white text-xs focus:outline-none leading-relaxed">${selectedMemory.details || ''}</textarea>
+                        </div>
+
+                        <!-- Sub-images management -->
+                        <div id="edit-subimages-row" class="${selectedMemory.type === 'text' ? 'hidden' : ''}">
+                            <label class="block text-xs text-slate-400 mb-1">الصور الإضافية داخل الكرت</label>
+                            <div class="flex gap-2 mb-2">
+                                <button onclick="addSubImageToList()" class="px-3 bg-sky-600 hover:bg-sky-500 text-white rounded-lg text-xs font-bold">إضافة</button>
+                                <input id="edit-new-sub" type="text" placeholder="أدخل رابط صورة إضافية" class="flex-1 bg-slate-950/70 border border-sky-500/10 rounded-xl px-3 py-1.5 text-white text-xs focus:outline-none font-mono text-left">
+                            </div>
+                            <div id="subimages-list" class="flex gap-2 flex-wrap mt-2">
+                                <!-- Loaded dynamically -->
+                            </div>
+                        </div>
+
+                        <div class="flex justify-end gap-2 pt-3 border-t border-sky-500/10">
+                            <button onclick="isEditing=false; renderModalBody();" class="px-3.5 py-1.5 bg-slate-950 hover:bg-slate-900 border border-sky-500/10 text-slate-300 rounded-xl text-xs font-bold">إلغاء التعديل</button>
+                        </div>
+                    </div>
+                `;
+                renderSubimagesEditList();
+            } else {
+                // VIEW STATE TEMPLATE
+                let coverHtml = "";
+                if (selectedMemory.type === "image" && selectedMemory.src) {
+                    coverHtml = `
+                        <div class="relative w-full h-64 md:h-80 overflow-hidden rounded-2xl bg-slate-950 mb-6 border border-sky-500/10">
+                            <img src="${selectedMemory.src}" referrerpolicy="no-referrer" alt="${selectedMemory.title}" class="w-full h-full object-cover">
+                            <div class="absolute inset-0 bg-gradient-to-t from-[#091528] via-transparent to-transparent opacity-80"></div>
+                        </div>
+                    `;
+                }
+
+                // Additional sub-images display
+                let subImgsHtml = "";
+                if (selectedMemory.subImages && selectedMemory.subImages.length > 0) {
+                    let items = "";
+                    selectedMemory.subImages.forEach((img) => {
+                        items += `
+                            <div class="w-24 h-24 md:w-32 md:h-32 rounded-xl overflow-hidden bg-slate-950 border border-sky-500/20 shadow-lg transform hover:scale-105 transition-all">
+                                <img src="${img}" referrerpolicy="no-referrer" class="w-full h-full object-cover" onclick="window.open('${img}', '_blank')">
+                            </div>
+                        `;
+                    });
+                    subImgsHtml = `
+                        <div class="mt-6 pt-5 border-t border-sky-500/10 text-right">
+                            <h4 class="text-xs font-bold text-sky-400 mb-3">تفاصيل مصورة إضافية ✨</h4>
+                            <div class="flex gap-3 flex-wrap justify-end">${items}</div>
+                        </div>
+                    `;
+                }
+
+                wrapper.innerHTML = `
+                    <div class="text-right">
+                        ${coverHtml}
+
+                        <div class="flex items-center justify-between pb-4 border-b border-sky-500/10 mb-4">
+                            <button onclick="isEditing=true; renderModalBody();" class="px-4 py-1.5 bg-[#0b1b30] hover:bg-sky-950 text-sky-400 hover:text-sky-300 rounded-xl text-xs font-bold flex items-center gap-1.5 border border-sky-500/20 transition-all">
+                                <i data-lucide="edit-3" class="w-3.5 h-3.5"></i>
+                                <span>تعديل هذا الكرت</span>
+                            </button>
+                            <div class="flex flex-col gap-1">
+                                <h3 class="text-xl font-bold text-white">${selectedMemory.title}</h3>
+                                <p class="text-[10px] text-sky-400/80 font-mono tracking-wider">SECURE MEMORY CHIP</p>
+                            </div>
+                        </div>
+
+                        <!-- Caption bubble -->
+                        <div class="bg-[#0b1c32]/50 border border-sky-500/10 p-4 rounded-2xl mb-6 relative italic text-xs md:text-sm text-slate-300">
+                            <span class="absolute top-2 right-3 text-[10px] text-slate-500 font-mono">التعليق العفوي</span>
+                            <p class="mt-2">${selectedMemory.caption || ""}</p>
+                        </div>
+
+                        <!-- Story text -->
+                        <div class="space-y-4 text-slate-300 text-xs md:text-sm leading-relaxed whitespace-pre-wrap">
+                            <p>${selectedMemory.details || "لا توجد تفاصيل عميقة مضافة للآن. انقري على تعديل لتوثيق مشاعركِ الكبيرة هنا..."}</p>
+                        </div>
+
+                        ${subImgsHtml}
+                    </div>
+                `;
+            }
+
+            // Re-initialize Lucide Icons
+            lucide.createIcons();
+        }
+
+        function toggleEditType(val) {
+            const imgRow = document.getElementById("edit-image-row");
+            const subsRow = document.getElementById("edit-subimages-row");
+            if (val === 'text') {
+                imgRow.classList.add("hidden");
+                subsRow.classList.add("hidden");
+            } else {
+                imgRow.classList.remove("hidden");
+                subsRow.classList.remove("hidden");
+            }
+        }
+
+        function renderSubimagesEditList() {
+            const listEl = document.getElementById("subimages-list");
+            listEl.innerHTML = "";
+            if (!selectedMemory.subImages) selectedMemory.subImages = [];
+
+            selectedMemory.subImages.forEach((img, idx) => {
+                const item = document.createElement("div");
+                item.className = "flex items-center gap-1.5 bg-slate-950 border border-sky-500/20 rounded-lg px-2 py-1 text-slate-300 text-[10px] font-mono";
+                item.innerHTML = `
+                    <span class="truncate max-w-[120px]">${img}</span>
+                    <button onclick="removeSubImageFromList(${idx})" class="text-red-400 hover:text-red-300 font-bold">×</button>
+                `;
+                listEl.appendChild(item);
+            });
+        }
+
+        function addSubImageToList() {
+            const urlInput = document.getElementById("edit-new-sub");
+            const urlVal = urlInput.value.trim();
+            if (urlVal) {
+                if (!selectedMemory.subImages) selectedMemory.subImages = [];
+                selectedMemory.subImages.push(convertImgUrl(urlVal));
+                urlInput.value = "";
+                renderSubimagesEditList();
+            }
+        }
+
+        function removeSubImageFromList(idx) {
+            selectedMemory.subImages = selectedMemory.subImages.filter((_, i) => i !== idx);
+            renderSubimagesEditList();
+        }
+
+        function saveModalChanges() {
+            const type = document.getElementById("edit-type").value;
+            const title = document.getElementById("edit-title").value.trim();
+            const src = type === "image" ? convertImgUrl(document.getElementById("edit-src").value) : null;
+            const caption = document.getElementById("edit-caption").value.trim();
+            const details = document.getElementById("edit-details").value.trim();
+
+            selectedMemory.type = type;
+            selectedMemory.title = title || "ذكرى غير معنونة";
+            selectedMemory.src = src;
+            selectedMemory.caption = caption || "لا يوجد تعليق مضاف";
+            selectedMemory.details = details || "لا توجد تفاصيل مضافة حتى الآن";
+
+            // Save inside local memories list
+            const idx = memories.findIndex((m) => m.id === selectedMemory.id);
+            if (idx !== -1) {
+                memories[idx] = { ...selectedMemory };
+            }
+
+            saveMemoriesToDisk();
+            isEditing = false;
+            renderModalBody();
+        }
+
+
+        // BIRTHDAY WIZARD STEPS
+        let candleTime = 10;
+        function openBirthdayWizard() {
+            document.getElementById("birthday-wizard").classList.remove("hidden");
+            bdayGotoStep('gift');
+            triggerHeartSplash();
+            if (!isMusicPlaying) {
+                togglePlayMusic();
+            }
+        }
+
+        function closeBirthdayWizard() {
+            // Clean intervals and timers
+            clearInterval(candleCountdownInterval);
+            clearTimeout(bdayStepTimeout);
+            document.getElementById("birthday-wizard").classList.add("hidden");
+        }
+
+        function bdayGotoStep(step) {
+            // Hide all steps
+            document.getElementById("bday-step-gift").classList.add("hidden");
+            document.getElementById("bday-step-candle").classList.add("hidden");
+            document.getElementById("bday-step-celeb").classList.add("hidden");
+            document.getElementById("bday-step-envelope").classList.add("hidden");
+            document.getElementById("bday-step-letter").classList.add("hidden");
+
+            // Stop active interval/timeout
+            clearInterval(candleCountdownInterval);
+            clearTimeout(bdayStepTimeout);
+
+            // Show active step
+            if (step === 'gift') {
+                document.getElementById("bday-step-gift").classList.remove("hidden");
+            } 
+            else if (step === 'candle') {
+                document.getElementById("bday-step-candle").classList.remove("hidden");
+                
+                // Play music if it's not already playing
+                if (!isMusicPlaying) {
+                    togglePlayMusic();
+                }
+
+                // Initialize Candle burning sequence
+                document.getElementById("candle-flame-element").classList.remove("hidden");
+                document.getElementById("candle-halo").classList.remove("hidden");
+                document.getElementById("candle-progress-fill").style.width = "100%";
+                candleTime = 10;
+                document.getElementById("candle-timer-text").textContent = candleTime;
+
+                // Slowly deflate progress bar width to 0% over 10s
+                setTimeout(() => {
+                    document.getElementById("candle-progress-fill").style.width = "0%";
+                }, 100);
+
+                // Countdown timer
+                candleCountdownInterval = setInterval(() => {
+                    candleTime--;
+                    if (candleTime < 0) candleTime = 0;
+                    document.getElementById("candle-timer-text").textContent = candleTime;
+                }, 1000);
+
+                // Timeout to blow out the candle and trigger step 3
+                bdayStepTimeout = setTimeout(() => {
+                    clearInterval(candleCountdownInterval);
+                    // Flame goes off (hidden) and smoke pops up
+                    document.getElementById("candle-flame-element").classList.add("hidden");
+                    document.getElementById("candle-halo").classList.add("hidden");
+                    
+                    // Show smoke puff alert
+                    const smoke = document.createElement("div");
+                    smoke.className = "absolute text-3xl font-bold text-slate-400 select-none animate-ping";
+                    smoke.textContent = "💨 🌫️";
+                    smoke.style.top = "40px";
+                    document.getElementById("bday-step-candle").appendChild(smoke);
+                    
+                    setTimeout(() => {
+                        smoke.remove();
+                        bdayGotoStep('celeb');
+                    }, 1200);
+
+                }, 10000);
+            } 
+            else if (step === 'celeb') {
+                document.getElementById("bday-step-celeb").classList.remove("hidden");
+                
+                // Falling hearts and stars shower
+                bdayFallingShower();
+
+                // Go to step 4 envelope after 6 seconds automatically
+                bdayStepTimeout = setTimeout(() => {
+                    bdayGotoStep('envelope');
+                }, 6000);
+            } 
+            else if (step === 'envelope') {
+                document.getElementById("bday-step-envelope").classList.remove("hidden");
+            } 
+            else if (step === 'letter') {
+                document.getElementById("bday-step-letter").classList.remove("hidden");
+            }
+        }
+
+        // Celeb falling shower
+        function bdayFallingShower() {
+            const container = document.getElementById("birthday-hearts-bg");
+            container.innerHTML = "";
+            const icons = ["💙", "🌸", "✨", "💫", "🍿", "❤️", "💖"];
+            
+            for (let i = 0; i < 45; i++) {
+                const el = document.createElement("div");
+                el.className = "absolute text-xl md:text-3xl pointer-events-none transition-all";
+                el.textContent = icons[Math.floor(Math.random() * icons.length)];
+                el.style.left = `${Math.random() * 100}vw`;
+                el.style.top = `-50px`;
+                el.style.transform = `scale(${0.5 + Math.random() * 0.8})`;
+                container.appendChild(el);
+
+                // Animate down using standard CSS transitions
+                setTimeout(() => {
+                    el.style.transition = `all ${4 + Math.random() * 4}s linear`;
+                    el.style.transform = `translateY(110vh) rotate(${Math.random() * 360}deg)`;
+                    el.style.opacity = "0.1";
+                }, 50);
+
+                // Cleanup
+                setTimeout(() => {
+                    el.remove();
+                }, 9000);
+            }
+        }
+    </script>
+</body>
+</html>
